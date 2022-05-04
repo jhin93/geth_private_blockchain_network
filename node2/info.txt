@@ -1,0 +1,5 @@
+node1 public address - 0x93Ce1D94e20b421F84E2253E877Fb23cA9b6E7FF
+password - wlsrud20
+
+node2 public address - 0xebed0F24eE1fA32b8e806224EbEA5971D628ECc1
+password - wlsrud20
