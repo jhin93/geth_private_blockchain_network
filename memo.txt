@@ -1,9 +1,23 @@
 - 이더리움 어카운트 생성
-
 geth --datadir "./data" account new
 결과 : 퍼블릭 어드레스 키 1개 + 시크릿 키 1개
 비번 : @만 뺀 것
 
+- 노드에게 누가 제네시스 json 파일을 사용하고 네트워크를 사용하는지 알려주는 명령어
+geth --datadir ./data init ../blockpoa.json (node1에서 실행)
+
+실행 결과 : 
+➜  node1 git:(master) ✗ geth --datadir ./data init ../blockpoa.json
+INFO [05-06|14:31:58.231] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-06|14:31:58.236] Set global gas cap                       cap=50,000,000
+INFO [05-06|14:31:58.237] Allocated cache and file handles         database=/Users/kimjinkyung/Desktop/own_geth_network/node1/data/geth/chaindata cache=16.00MiB handles=16
+INFO [05-06|14:31:58.385] Writing custom genesis block 
+INFO [05-06|14:31:58.394] Persisted trie from memory database      nodes=356 size=50.62KiB time=2.599157ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-06|14:31:58.395] Successfully wrote genesis state         database=chaindata hash=54fb63..bd8862
+INFO [05-06|14:31:58.395] Allocated cache and file handles         database=/Users/kimjinkyung/Desktop/own_geth_network/node1/data/geth/lightchaindata cache=16.00MiB handles=16
+INFO [05-06|14:31:58.555] Writing custom genesis block 
+INFO [05-06|14:31:58.567] Persisted trie from memory database      nodes=356 size=50.62KiB time=3.162662ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-06|14:31:58.567] Successfully wrote genesis state         database=lightchaindata hash=54fb63..bd8862
 
 
 - puppeth
@@ -21,5 +35,10 @@ node2 계정은 네트워크의 일부지만 채굴은 안함
 10. 2번 'Manage existing genesis' 선택 // 여기서부턴 https://brunch.co.kr/@skkrypto/79 참고
 11. Export genesis configuration 선택
 12. 엔터 입력 - 현재 디렉토리에 export
+
+
+
+
+
 
 
