@@ -67,4 +67,18 @@ INFO [05-06|14:31:58.567] Persisted trie from memory database      nodes=356 siz
 INFO [05-06|14:31:58.567] Successfully wrote genesis state         database=lightchaindata hash=54fb63..bd8862
 ```
 
+- 부트 노드에서 부트 키 생성
+bootnode -genkey boot.key
+
+- 부트 키로 부트 노드 실행
+bootnode -nodekey boot.key
+
+
+
+
+
+
+
+
+
 

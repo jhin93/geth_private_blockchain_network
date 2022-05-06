@@ -3,3 +3,14 @@ password - wlsrud20
 
 node2 public address - 0xebed0F24eE1fA32b8e806224EbEA5971D628ECc1
 password - wlsrud20
+
+bootnode enode:
+enode://8a0e55d9d2d6ca2ce64152dab6a93eed0dcb8e1be135c48d01c371728fce74d7988d4888d8af8c02a3a390627b2c18e4eae2c2a5359bf6ea3472133e337eb3bd@127.0.0.1:0?discport=30301
+
+
+
+
+
+
+
+
