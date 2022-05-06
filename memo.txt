@@ -68,14 +68,37 @@ INFO [05-06|14:31:58.567] Successfully wrote genesis state         database=ligh
 ```
 
 - 부트 노드에서 부트 키 생성
-bootnode -genkey boot.key
+    bootnode -genkey boot.key
 
 - 부트 키로 부트 노드 실행
-bootnode -nodekey boot.key
+    bootnode -nodekey boot.key
+
+- 노드에서 부트노드를 통해 네트워크 실행
+
+    node1 에서 네트워크 실행
+    geth --networkid 14333 --datadir "./data" --bootnodes enode://8a0e55d9d2d6ca2ce64152dab6a93eed0dcb8e1be135c48d01c371728fce74d7988d4888d8af8c02a3a390627b2c18e4eae2c2a5359bf6ea3472133e337eb3bd@127.0.0.1:30301 --port 30303 --ipcdisable --syncmode full --rpc --allow-insecure-unlock --rpccorsdomain "*" --rpcport 8545 --unlock 0x93Ce1D94e20b421F84E2253E877Fb23cA9b6E7FF --password password.txt --mine console
 
 
+    node2에서 네트워크 실행할 때 node1과 같은 형식 내에서 옵션을 다르게 해줘야 한다.
 
+    포트는 30304,
+    rpcport는 8546,
+    모든 포트에서의 접근 허용(rpccorsdomain "*" )
+    node2는 채굴자가 아니라고 처음 제네시스 파일 생성할때 설정함. 그래서 명령문에서 --mine옵션을 빼야함.
+    퍼블릭 어드레스는 node2의 것을 입력
 
+    geth --networkid 14333 --datadir "./data" 
+    --bootnodes enode://8a0e55d9d2d6ca2ce64152dab6a93eed0dcb8e1be135c48d01c371728fce74d7988d4888d8af8c02a3a390627b2c18e4eae2c2a5359bf6ea3472133e337eb3bd@127.0.0.1:30301 
+    --port 30304 
+    --ipcdisable 
+    --syncmode full 
+    --rpc 
+    --allow-insecure-unlock 
+    --rpccorsdomain "*" 
+    --rpcport 8546 
+    --unlock 0xebed0F24eE1fA32b8e806224EbEA5971D628ECc1 
+    --password password.txt 
+    console
 
 
 
