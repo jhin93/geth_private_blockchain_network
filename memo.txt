@@ -8,7 +8,7 @@ geth --datadir "./data" account new
 
 - puppeth
 genesis 파일 생성. 네트워크의 모든 정보 담고 있음
-1. 이름 입력
+1. 이름 입력 blockpoa
 2. 2번 선택
 3. 1번 선택(create new genesis from scratch)
 4. 2번 선택(프라이빗 네트워크에 작업증명은 어울리지 않음)
@@ -18,6 +18,8 @@ node2 계정은 네트워크의 일부지만 채굴은 안함
 7. node1, node2에 가상이더 예치
 8. yes
 9. 체인/네트워크 이더리움은 1로 시작. 영상처럼 14333입력
-
+10. 2. Manage existing genesis 선택 // 여기서부턴 https://brunch.co.kr/@skkrypto/79 참고
+11. Export genesis configuration 선택
+12. 엔터 입력 - 현재 디렉토리에 export
 
 
