@@ -1,3 +1,5 @@
+chain/network ID
+19444
 
 node1 
 public address : 0x08d4cEE4075b1BBEd80Ec815896C516f4A169447
