@@ -12,3 +12,18 @@ public address : 0x3e2dE119df49057C1625FF220Fbf75338Bf4c37C
 node3
 public address : 0x6c934286e7F518864109d9a188B2D16a68d1b05a
 비번 : @ 제외
+
+node1 실행
+geth --networkid 19444 --datadir "./data" --bootnodes enode://68d9ae9d7752d25ca00d11b682877d0be6ec4e47d49857c4f01596649f0b693a6ff1f0d87ca5e144b894bbaee14b7f0eb8b1f74160103b4945ac8a151f4b41b3@127.0.0.1:30301 --port 30303 --rpcport 8545 --unlock 0x08d4cEE4075b1BBEd80Ec815896C516f4A169447 --password password.txt --mine console 
+
+node2 실행
+geth --networkid 19444 --datadir "./data" --bootnodes enode://68d9ae9d7752d25ca00d11b682877d0be6ec4e47d49857c4f01596649f0b693a6ff1f0d87ca5e144b894bbaee14b7f0eb8b1f74160103b4945ac8a151f4b41b3@127.0.0.1:30301 --port 30304 --rpcport 8546 --unlock 0x3e2dE119df49057C1625FF220Fbf75338Bf4c37C --password password.txt console 
+
+node3 실행
+geth --networkid 19444 --datadir "./data" --bootnodes enode://68d9ae9d7752d25ca00d11b682877d0be6ec4e47d49857c4f01596649f0b693a6ff1f0d87ca5e144b894bbaee14b7f0eb8b1f74160103b4945ac8a151f4b41b3@127.0.0.1:30301 --port 30305 --rpcport 8547 --unlock 0x6c934286e7F518864109d9a188B2D16a68d1b05a --password password.txt console 
+
+
+
+
+
+

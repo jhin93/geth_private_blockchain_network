@@ -1,3 +1,5 @@
+### files
+
 # node1 secret key
 UTC--2022-05-08T09-41-35.596753000Z--08d4cee4075b1bbed80ec815896c516f4a169447
 
@@ -7,5 +9,10 @@ UTC--2022-05-08T09-47-53.360606000Z--3e2de119df49057c1625ff220fbf75338bf4c37c
 # node3 secret key
 UTC--2022-05-08T09-49-20.832484000Z--6c934286e7f518864109d9a188b2d16a68d1b05a
 
+password.txt
+
+### folders
 node_modules
-geth
+data
+# bootnode(bootkey)
+bootnode
