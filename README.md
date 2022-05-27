@@ -47,6 +47,17 @@ eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value:web3.toWei(
 eth.pendingTransactions : 현재 진행을 기다리고 있는 트랜잭션  
 ```
 
+geth로 프라이빗 네트워크와 연결하여 시작하는 데 사용되는 옵션
+```
+--networkid 특정 이더리움 네트워크를 식별합니다. 예를 들어 테스트넷 및 메인넷에는 고유한 네트워크 ID가 있습니다(기본값 : 1. MAINNET)
+--identity 프라이빗 네트워크의 특정 노드를 식별하는 데 사용합니다.
+--rpc 노드에서 JSON-RPC 인터페이스를 활성화합니다(기본값 : enabled).
+--rpcapi RPC로 API를 사용하도록 설정합니다.
+--datadir 블록체인 데이터 폴더
+--port 같은 네트워크에 있는 다른 피어가 이 노드와 연결하는 데 사용하는 네트워크 수신 포트
+--nodiscover 같은 networkid와 연결되어 같은 제네시스 블록을 참조하는 클라이언트가 노드를 찾지 못하게 합니다. 이 네트워크에 다른 노드를 수동으로 추가해야 합니다.
+즉, 원래 geth에 접속하면 다른 연결된 노드를 자동으로 찾는데 그것을 막는 것. 빠른 테스트를 위해 채굴노드만 돌리거나 할 때 사용.
+```
 
 
 POA(권위증명)
