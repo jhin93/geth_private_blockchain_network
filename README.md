@@ -34,6 +34,7 @@ miner.setEtherbase(eth.accounts[1])
 
 attach 이후에 javascript로 수행 할 수 있는 명령어  
 http://wiki.hash.kr/index.php/%EA%B2%8C%EC%8A%A4  
+```
 eth.accounts : 현재 생성된 계정 배열  
 eth.blockNumber : 현재 채굴된 블록의 번호  
 eth.hashrate : 현재 해시레이트  
@@ -44,6 +45,7 @@ eth.getTranaction(tx) : 트랜잭션의 정보
 eth.sendTransaction({from:account, to:account, value:wei}) : 트랜잭션 보내기  
 eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value:web3.toWei(1,"ether")})  
 eth.pendingTransactions : 현재 진행을 기다리고 있는 트랜잭션  
+```
 
 
 
